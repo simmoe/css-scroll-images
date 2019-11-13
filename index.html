@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css' />
+    <link rel='stylesheet' href='index.css'>
+</head>
+<body>
+    <main>
+        <div class="slides-wrapper">
+            <div class="slides">
+                <div id="p-1" class="slide"><img src="./img/geran-de-klerk-qzgN45hseN0-unsplash.jpg" alt=""></div>
+                <div id="p-2" class="slide"><img src="./img/steven-kamenar-MMJx78V7xS8-unsplash.jpg" alt=""></div>
+                <div id="p-3" class="slide"><img src="./img/thomas-griesbeck-BS-Uxe8wU5Y-unsplash.jpg" alt=""></div>
+                <div id="p-4" class="slide"><img src="./img/yoshi-takekawa-7wk0ja-DP_c-unsplash.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="menu">
+            <a class="active" href="#p-1"></a>
+            <a href="#p-2"></a>
+            <a href="#p-3"></a>
+            <a href="#p-4"></a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('click', (e) => {
+            const a = document.querySelectorAll('.menu a').forEach( i => {i.classList.remove('active')} )
+            e.target.classList.add('active')
+        })
+    </script>
+
+</body>
+</html>
